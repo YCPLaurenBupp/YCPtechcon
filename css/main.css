@@ -97,6 +97,87 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   body{
+     max-width: 100%; /* This makes the window of the webpage 100% */
+     overflow-x: hidden; /* Globally, this turns off scroll left to right */
+     font-family: 'Roboto', sans-serif;
+     color: #717171;
+   }
+/* Begin Header Section*/
+
+header{
+  width: 100vw;
+  height: 223px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.header_logo{
+  height: 183px;
+  width:auto;
+  margin-left: 2em;
+}
+
+.hero_CTA{
+  background-color: #EB7260;
+  padding: 10px 10px 10px 30px;
+
+}
+
+
+
+
+/* Home Page */
+
+.hero{
+  height: 600px;
+  width:100%;
+  background-image: url("../img/headerimage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  position:relative;
+  display:flex;
+  align-items: center;
+}
+
+
+/* Footer Section */
+
+footer{
+    width: 100vw; /* This makes the width of the footer 100% to the size of your window */
+    height: 75px;
+    background-color: #000000;
+    color: #fff;
+    font-size:  20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* This hides horizontal scrolling for just the footer */
+    bottom: 0; /* This make the footer stick the bottom of the page */
+   }
+
+   footer li{
+     list-style-type: none;
+     display: inline;
+     justify-content: space-between;
+     margin: 0 auto;
+   }
+
+   .footer_line{
+     width: 90vw;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 0 auto;
+}
 
 
 
