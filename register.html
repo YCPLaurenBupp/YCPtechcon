@@ -14,14 +14,28 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <script src="js/menu.js"></script>
 </head>
 
 <body>
+  <!-- begin navigation -->
   <header>
     <div class="logo_section">
     <a href="index.html"><img src="img/DevConlogo.png" alt= DevConLogo class="header_logo"></a>
     </div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="about.html">About</a>
+      <a href="sponsors.html">Sponsors</a>
+    </div>
+    <div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>
   </header>
+  <!-- end navigation -->
 
   <section class="hero">
     <div class="hero_CTA"><h1>Register Today!</h1></div>
