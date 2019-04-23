@@ -103,6 +103,10 @@ textarea {
      font-family: 'Roboto', sans-serif;
      color: #717171;
    }
+   h1{
+     color: #fff;
+     font-size: 35px;
+   }
 /* Begin Header Section*/
 
 header{
@@ -185,7 +189,7 @@ div#hamburger {
 }
 
 .openbtn:hover {
-  background-color: #97D6A7;
+  color: #97D6A7;
 }
 
 #main {
@@ -224,36 +228,68 @@ box-shadow: 0px 18px 10px 0px rgba(0,0,0,0.25);
   align-items: center;
 }
 
+.triangles{
+  width: 100%;
+  border: 0;
+}
 
+video {
+  position: absolute;
+  z-index: -1;
+}
+
+.heading{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 150px;
+  z-index: 100;
+}
 /* Schedule Page */
+
 
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 300px;
+  padding-bottom: 80px;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: inherit;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 14px 50px;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.tablinks_1{
+  background-color: #97D6A7;
+}
+
+.tablinks_2{
+  background-color: #717171;
+}
+
+.tablinks_3{
+  background-color: #EB7260;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #ccc;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #000;
 }
 
 /* Style the tab content */
