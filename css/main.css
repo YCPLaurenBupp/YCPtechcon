@@ -143,7 +143,13 @@ div#hamburger {
   padding: 10px 10px 10px 30px;
 }
 
-/* Test */
+#demo{
+  padding: 10px 10px 10px 30px;
+  font-size: 60px;
+  color: #717171;
+}
+
+/* Hamburger */
 
 .sidebar {
   height: 100%;
@@ -200,10 +206,12 @@ div#hamburger {
 /* Buttons*/
 
 .DevCon_grey{
+  justify-content: center;
+  align-items: center;
   width: 110px;
   min-height: 50px;
   color: #fff;
-  background-color: #717171;
+  background-color: #97D6A7;
   -webkit-box-shadow: 0px 18px 10px 0px rgba(0,0,0,0.25);
 -moz-box-shadow: 0px 18px 10px 0px rgba(0,0,0,0.25);
 box-shadow: 0px 18px 10px 0px rgba(0,0,0,0.25);
@@ -298,6 +306,38 @@ video {
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+}
+
+/* Speaker Section */
+
+.speaker_section{
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  }
+
+.speaker_grid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.speakers {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  padding: 1%;
+}
+
+.speakers img{
+  width: 300px;
+  height: 300px;
 }
 
 
