@@ -10,11 +10,13 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
+  <link rel="modal:open" href="ex1"/>
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/menu.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -39,18 +41,16 @@
 
   <video class="triangles" autoplay loop mute>
     <source src="img/triangles.mp4" type="video/mp4">
-
   </video>
-  <div class="heading"><h1>Register!</h1></div>
-
-  <section class="button_alignment">
-    <div>
-    <button class="DevCon_grey">3 Day Pass +</button>
-    <button class="DevCon_grey">3 Day Pass</button>
-    <button class="DevCon_grey">2 Day Pass</button>
-    <button class="DevCon_grey">1 Day Pass</button>
-    <button class="DevCon_grey">Student</button></div>
+  <div class="heading"><h1>Speakers</h1></div>
+  <section class="speaker_position">
+    <p><a href="ex1" rel="modal:open">Open Modal</a></p>
+            <div id="ex1" class="modal">
+              <p>Brad Frost is a web designer, speaker, writer, and consultant located in beautiful Pittsburgh, PA. He is the author of the book Atomic Design, which introduces a methodology to create and maintain effective design systems. In addition to co-hosting the Style Guides Podcast, he has also helped create several tools and resources for web designers, including Pattern Lab, Styleguides.io, Style Guide, and This Is Responsive.</p>
+              <a href="ex1" rel="modal:close">Close</a>
+            </div>
 </section>
+
 
 
 
@@ -66,12 +66,16 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
+
+
+
+
+
 
 
 
