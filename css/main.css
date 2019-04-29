@@ -138,17 +138,6 @@ div#hamburger {
     top: -30px;
 }
 
-.hero_CTA{
-  background-color: #EB7260;
-  padding: 10px 10px 10px 30px;
-}
-
-#demo{
-  padding: 10px 10px 10px 30px;
-  font-size: 60px;
-  color: #717171;
-}
-
 /* Hamburger */
 
 .sidebar {
@@ -203,7 +192,15 @@ div#hamburger {
   padding: 16px;
 }
 
-/* Buttons*/
+/* Register*/
+
+.button_alignment{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 30%;
+  padding-bottom: 10%;
+}
 
 .DevCon_grey{
   justify-content: center;
@@ -211,14 +208,13 @@ div#hamburger {
   width: 110px;
   min-height: 50px;
   color: #fff;
+  cursor: pointer;
   background-color: #97D6A7;
+  border: none;
   -webkit-box-shadow: 0px 18px 10px 0px rgba(0,0,0,0.25);
 -moz-box-shadow: 0px 18px 10px 0px rgba(0,0,0,0.25);
 box-shadow: 0px 18px 10px 0px rgba(0,0,0,0.25);
 }
-
-
-
 
 
 /* Home Page */
@@ -253,8 +249,26 @@ video {
   padding-top: 150px;
   z-index: 100;
 }
-/* Schedule Page */
 
+.hero_CTA{
+  background-color: #EB7260;
+  padding: 10px 30px 10px 30px;
+  font-size: 60px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero_CTA a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#demo{
+  font-size: 60px;
+  color: #717171;
+}
+
+/* Schedule Page */
 
 /* Style the tab */
 .tab {
@@ -262,7 +276,7 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 300px;
+  padding-top: 25%;
   padding-bottom: 80px;
 }
 
@@ -310,34 +324,114 @@ video {
 
 /* Speaker Section */
 
-.speaker_section{
-  width: 80vw;
-  display: flex;
+.speaker_position{
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  position: relative;
-  }
+  display: flex;
+  padding-top: 25%;
+}
 
 .speaker_grid{
+  width: 80vw;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   width: 100%;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .speakers {
-  position: relative;
-  width: 300px;
-  height: 300px;
   padding: 1%;
+  position: relative;
 }
 
 .speakers img{
   width: 300px;
   height: 300px;
+}
+
+.image img{
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.speakers:hover .image {
+  opacity: 0.3;
+}
+
+.speakers:hover .middle {
+  opacity: 1;
+}
+
+.text{
+  cursor: pointer;
+  color: #000;
+  border: none;
+  font-size: 25px;
+  background-color: inherit;
+}
+
+/* Modal */
+.modal {
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgb(113,113,113,0.5); /* Black w/ opacity */
+}
+
+
+/* Code of Conduct */
+.code{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  padding-top: 25%;
+  color: #000;
+}
+.code_jargon{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+.accordion {
+  background-color: #717171;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px, #000000;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+  color: #000000;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
 }
 
 
