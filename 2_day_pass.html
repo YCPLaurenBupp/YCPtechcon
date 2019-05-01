@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-    <script src="js/menu.js"></script>
+  <script src="js/menu.js"></script>
 </head>
 
 <body>
@@ -37,10 +37,43 @@
   </header>
   <!-- end navigation -->
 
-  <section class="hero">
-    <button class="hero_CTA"><a href="register.html"<h1>Register Today!</h1></a></button>
-    <div class="countdown"><div id="demo"></div></div>
-  </section>
+  <video class="triangles showme" autoplay loop mute>
+    <source src="img/triangles.mp4" type="video/mp4">
+  </video>
+
+  <div class="triangles hideme">
+    <img src="img/triangles.gif">
+  </div>
+
+  <div class="heading"><h1>2 Day Pass</h1></div>
+
+  <section class="form">
+    <form action="/action_page.php">
+  <div class="container">
+    <h3>Register</h3>
+    <h2>Please fill in this form to Register for the 2 Day Pass</h2>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+</section>
+
 
 
   <!--[if lte IE 9]>
@@ -55,8 +88,12 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-
-
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
 
 

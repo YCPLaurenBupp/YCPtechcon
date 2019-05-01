@@ -107,6 +107,29 @@ textarea {
      color: #fff;
      font-size: 35px;
    }
+
+   h2{
+     color:#97D6A7;
+     font-size: 20px;
+   }
+
+   h3{
+     color: #717171;
+     font-size: 25px;
+   }
+
+   h4{
+     color: #717171;
+     font-size: 15px;
+   }
+
+   .hideme{
+     display:none
+   }
+
+   .showme{
+     display: block;
+   }
 /* Begin Header Section*/
 
 header{
@@ -192,31 +215,6 @@ div#hamburger {
   padding: 16px;
 }
 
-/* Register*/
-
-.button_alignment{
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  padding-top: 30%;
-  padding-bottom: 10%;
-}
-
-.DevCon_grey{
-  justify-content: center;
-  align-items: center;
-  width: 110px;
-  min-height: 50px;
-  color: #fff;
-  cursor: pointer;
-  background-color: #97D6A7;
-  border: none;
-  -webkit-box-shadow: 0px 18px 10px 0px rgba(0,0,0,0.25);
--moz-box-shadow: 0px 18px 10px 0px rgba(0,0,0,0.25);
-box-shadow: 0px 18px 10px 0px rgba(0,0,0,0.25);
-}
-
-
 /* Home Page */
 
 .hero{
@@ -263,9 +261,120 @@ video {
   color: #fff;
 }
 
+.hero .countdown #demo{
+  padding-left: 25%;
+}
+
 #demo{
-  font-size: 60px;
+  font-size: 100px;
   color: #717171;
+}
+
+/* Register*/
+
+.button_alignment{
+  justify-content: center;
+  align-items: center;
+  display: inline;
+  padding-top: 30%;
+  padding-bottom: 10%;
+}
+
+.button_space{
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  padding-right: 40px;
+  padding-top: 30%;
+  padding-bottom: 10%;
+}
+
+.DevCon_grey{
+  justify-content: center;
+  align-items: center;
+  display: inline;
+  width: 210px;
+  min-height: 80px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #97D6A7;
+  border: none;
+  -webkit-box-shadow: 0px 18px 10px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 18px 10px 0px rgba(0,0,0,0.25);
+box-shadow: 0px 18px 10px 0px rgba(0,0,0,0.25);
+}
+
+.DevCon_grey a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+.DevCon_grey a:hover{
+  color: #EB7260;
+}
+/* Indiviudal Schedule Pages*/
+
+.form {
+  padding-top: 20%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+  width: 100%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #717171;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #EB7260;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
 }
 
 /* Schedule Page */
@@ -322,6 +431,17 @@ video {
   border-top: none;
 }
 
+.tabcontent a{
+  text-decoration: none;
+  color: #717171;
+  cursor: pointer;
+}
+
+.tabcontent a:hover{
+  text-decoration: none;
+  color: #000;
+}
+
 /* Speaker Section */
 
 .speaker_position{
@@ -336,8 +456,6 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  width: 100%;
   flex-wrap: wrap;
   position: relative;
 }
@@ -387,11 +505,33 @@ video {
 }
 
 /* Modal */
-.modal {
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgb(113,113,113,0.5); /* Black w/ opacity */
+.jquery-modal blocker current{
+  background-color: (113, 113, 113, 75);
 }
+
+/* Sponsors */
+
+.sponsor_grid {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.sponsors_link {
+  text-decoration: none;
+  color: #97D6A7;
+  cursor: pointer;
+}
+
+.sponsor_logo{
+  justify-content: space-around;
+}
+
+/* About*/
+
 
 
 /* Code of Conduct */
@@ -405,9 +545,9 @@ video {
 }
 .code_jargon{
   justify-content: center;
-  display: flex;
   align-items: center;
   width: 80%;
+  font-size: 18px;
 }
 .accordion {
   background-color: #717171;
@@ -576,8 +716,20 @@ footer{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media screen and (max-width: 768px){
+
+  .hideme{
+    display: block;
+  }
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+
+  .showme{
+    display: none;
+  }
 }
 
 @media print,
