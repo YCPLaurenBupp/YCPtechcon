@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+    <script src="js/menu.js"></script>
+</head>
+
+<body>
+  <!-- begin navigation -->
+  <header>
+    <div class="logo_section">
+    <a href="index.html"><img src="img/DevConlogo.png" alt= DevConLogo class="header_logo"></a>
+    </div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="about.html">About</a>
+      <a href="sponsors.html">Sponsors</a>
+    </div>
+    <div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>
+  </header>
+  <!-- end navigation -->
+
+  <video class="triangles showme" autoplay loop mute>
+    <source src="img/triangles.mp4" type="video/mp4">
+  </video>
+
+  <div class="triangles hideme">
+    <img src="img/triangles.gif">
+  </div>
+
+  <div class="heading"><h1>About</h1></div>
+
+  <section class="code">
+  <section class="code_jargon"><p>Central Pennsylvania's first enterprise level developer conference nestled in the state capitol of Harrisburg right along the Susquehanna river.</p>
+  <p>DevCon came out of the collective ideas of the Central Pennsylvania Technology Council and Harrisburg University as a way to build community in the region and attract top talent in the area.</p>
+  <p>It will be a great time.
+  <br>Please join us to Code some shit up!</p></section>
+  </section>
+  <section class="secondary_about">
+    <div><h3>Location</h3><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3044.699566989111!2d-76.88408904923621!3d40.260207672967034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8c105348135c1%3A0x7a1d437dd8b3ac8!2sHilton+Harrisburg!5e0!3m2!1sen!2sus!4v1556745254421!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    <h3>Contact</h3>
+      <p>Bill Bean | 717-765-9922 | bean@DevCon.com</p>
+    <h3>Frequently Asked Questions</h3>
+  </section>
+
+  <button class="accordion">Can I attend the conference without pre-registering?</button>
+  <div class="panel">
+    <p>YES YES YES! Just come on in to the location and you can register directly at the conference.</p>
+  </div>
+  <button class="accordion">Will there be food?</button>
+  <div class="panel">
+    <p>Only if you behave.</p>
+  </div>
+
+  <button class="accordion">Will I be able to obtain a fan club from my coding abilities?</button>
+  <div class="panel">
+    <p>We can not guarentee if people will like you or not.</p>
+  </div>
+
+  <button class="accordion">What kind of topics will be discussed?</button>
+  <div class="panel">
+    <p>Its a web conference... fill in the blanks.</p>
+  </div>
+  <button class="accordion">Is the conference all day?</button>
+  <div class="panel">
+    <p>The conference lasts from Friday to Sunday. You can attend any day depedning on what registration package you choose. The sessions end by 4:30pm Friday and Saturday. The conference then finishes up by 12pm on Sunday.</p>
+  </div>
+  <button class="accordion">How can I reach someone at DevCon?</button>
+  <div class="panel">
+    <p> If you have any questions or concerns relating to this Privacy Policy, please contact us by email at legal@padevcon.com. OR call Bill Bean. He'll help ya... maybe.</p>
+  </div>
+
+
+
+
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+
+
+
+  <footer>
+    <div class="footer_line">
+     <ul class="footer_nav">
+        <li><a href="code_of_conduct.html">Code of Conduct</a></li>
+        <li><a href="Register.html" style="color: #EB7260;">Register Today!</a></li>
+      </ul>
+        <span>2019 Copyright DevCon</span>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
