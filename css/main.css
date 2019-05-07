@@ -105,7 +105,7 @@ textarea {
    }
    h1{
      color: #fff;
-     font-size: 35px;
+     font-size: 50px;
    }
 
    h2{
@@ -233,20 +233,29 @@ div#hamburger {
 .triangles{
   width: 100%;
   border: 0;
-}
-
-video {
-  position: absolute;
-  z-index: -1;
-}
-
-.heading{
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  padding-top: 150px;
-  z-index: 100;
+  margin: 0;
+  position: relative;
 }
+
+video{
+  width: 100%;
+  height: auto;
+}
+
+.heading {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 25%;
+    bottom: 50%;
+    left: 45%;
+    margin: auto;
+    right: 45%;
+  }
 
 .hero_CTA{
   background-color: #EB7260;
@@ -272,21 +281,28 @@ video {
 
 /* Register*/
 
-.button_alignment{
+.button_position{
   justify-content: center;
   align-items: center;
-  display: inline;
-  padding-top: 30%;
-  padding-bottom: 10%;
+  display: flex;
+  padding-top: 10%;
+  width: 80%;
 }
 
-.button_space{
-  justify-content: space-around;
-  align-items: center;
+.button_grid{
   display: flex;
-  padding-right: 40px;
-  padding-top: 30%;
-  padding-bottom: 10%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.button_grid div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .DevCon_grey{
@@ -313,6 +329,7 @@ box-shadow: 0px 18px 10px 0px rgba(0,0,0,0.25);
 .DevCon_grey a:hover{
   color: #EB7260;
 }
+
 /* Indiviudal Schedule Pages*/
 
 .form {
@@ -344,13 +361,11 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 
-/* Overwrite default styles of hr */
 hr {
   border: 1px solid #717171;
   margin-bottom: 25px;
 }
 
-/* Set a style for the submit button */
 .registerbtn {
   background-color: #EB7260;
   color: white;
@@ -366,12 +381,10 @@ hr {
   opacity: 1;
 }
 
-/* Add a blue text color to links */
 a {
   color: dodgerblue;
 }
 
-/* Set a grey background color and center the text of the "sign in" section */
 .signin {
   background-color: #f1f1f1;
   text-align: center;
@@ -448,11 +461,10 @@ a {
   justify-content: center;
   align-items: center;
   display: flex;
-  padding-top: 25%;
+  padding-top: 10%;
 }
 
 .speaker_grid{
-  width: 80vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -531,7 +543,9 @@ a {
 }
 
 /* About*/
-
+.secondary_about{
+  padding-left: 30px;
+}
 
 
 /* Code of Conduct */
@@ -715,21 +729,73 @@ footer{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media screen and (min-width: 1500px){
+  h1{
+    font-size: 100px;
+  }
+}
+
+
+@media screen and (max-width: 1000px){
+  .header_logo{
+    height: 100px;
+    width:auto;
+    margin-left: 2em;
+  }
+  div.heading{
+    padding-top: 100px;
+  }
+}
 
 @media screen and (max-width: 768px){
-
-  .hideme{
-    display: block;
+  header {
+    height: 20%;
   }
+
+  .header_logo{
+    height: 50px;
+    width:auto;
+    margin-left: 2em;
+  }
+
 
   img{
     width: 100%;
     height: auto;
   }
 
-  .showme{
-    display: none;
+
+  h1{
+    font-size: 20px;
   }
+
+  footer{
+    height: 50px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .hero{
+    padding-top: 15%;
+    position:relative;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+  }
+  .hero .countdown #demo{
+    padding-left: 10%;
+  }
+
+  #demo{
+    font-size: 80px;
+    color: #717171;
+  }
+
+h1{
+  font-size: 20px;
+}
 }
 
 @media print,
