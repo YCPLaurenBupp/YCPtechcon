@@ -36,16 +36,15 @@
   <button class="openbtn" onclick="openNav()">☰</button>
   </header>
   <!-- end navigation -->
-
-  <video class="triangles showme" autoplay loop mute>
+  <section class="triangles">
+  <div>
+    <div class="heading"><h1>3 Day Pass</h1></div>
+    <video autoplay muted loop>
     <source src="img/triangles.mp4" type="video/mp4">
-  </video>
+    </video>
+    </div>
+  </section>
 
-  <div class="triangles hideme">
-    <img src="img/triangles.gif">
-  </div>
-
-  <div class="heading"><h1>3 Day Pass</h1></div>
 
   <section class="form">
     <form action="/action_page.php">
@@ -62,9 +61,6 @@
 
     <label for="psw-repeat"><b>Repeat Password</b></label>
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-    <hr>
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
     <button type="submit" class="registerbtn">Register</button>
   </div>
 
@@ -98,7 +94,7 @@
     <div class="footer_line">
      <ul class="footer_nav">
         <li><a href="code_of_conduct.html">Code of Conduct</a></li>
-        <li><a href="Register.html" style="color: #EB7260;">Register Today!</a></li>
+        <li><a href="Register.html" style="color: #EB7260;">Register</a></li>
       </ul>
         <span>2019 Copyright DevCon</span>
     </div>
